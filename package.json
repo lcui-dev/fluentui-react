@@ -1,0 +1,33 @@
+{
+  "name": "fluent-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
+    "@fluentui/react-icons": "^2.0.244",
+    "@storybook/addon-essentials": "^8.1.9",
+    "@storybook/addon-interactions": "^8.1.9",
+    "@storybook/addon-links": "^8.1.9",
+    "@storybook/addon-mdx-gfm": "^8.1.9",
+    "@storybook/addon-onboarding": "^8.1.9",
+    "@storybook/blocks": "^8.1.9",
+    "@storybook/react": "^8.1.9",
+    "@storybook/react-vite": "^8.1.9",
+    "@storybook/test": "^8.1.9",
+    "prop-types": "^15.8.1",
+    "sass": "^1.77.5",
+    "storybook": "^8.1.9",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  }
+}

@@ -1,0 +1,144 @@
+@import "../theme/variables";
+
+.fui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $colorNeutralBackground1;
+  color: $colorNeutralForeground1;
+  border: $strokeWidthThin solid $colorNeutralStroke1;
+  font-family: $fontFamilyBase;
+  padding: 5px $spacingHorizontalM;
+  min-width: 96px;
+  border-radius: $borderRadiusMedium;
+  font-size: $fontSizeBase300;
+  font-weight: $fontWeightSemibold;
+  line-height: $lineHeightBase300;
+  outline-style: none;
+  cursor: pointer;
+
+  &__icon {
+    margin-right: $spacingHorizontalSNudge;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: $colorNeutralBackground1Hover;
+    border-color: $colorNeutralStroke1Hover;
+    color: $colorNeutralForeground1Hover;
+
+    &:active {
+      background-color: $colorNeutralBackground1Pressed;
+      border-color: $colorNeutralStroke1Pressed;
+      color: $colorNeutralForeground1Pressed;
+      outline-style: none;
+    }
+  }
+
+  &--circular {
+    border-radius: $borderRadiusCircular;
+  }
+
+  &--square {
+    border-radius: $borderRadiusNone;
+  }
+
+  &--primary {
+    color: $colorNeutralForegroundOnBrand;
+    border-color: transparent;
+    background-color: $colorBrandBackground;
+
+    &:hover {
+      color: $colorNeutralForegroundOnBrand;
+      background-color: $colorBrandBackgroundHover;
+
+      &:active {
+        color: $colorNeutralForegroundOnBrand;
+        background-color: $colorBrandBackgroundPressed;
+      }
+    }
+  }
+
+  &--outline {
+    background-color: $colorTransparentBackground;
+
+    &:hover {
+      background-color: $colorTransparentBackgroundHover;
+
+      &:active {
+        background-color: $colorTransparentBackgroundPressed;
+      }
+    }
+  }
+
+  &--subtle {
+    color: $colorNeutralForeground2;
+    background-color: $colorNeutralBackground2;
+    border-color: transparent;
+
+    &:hover {
+      color: $colorNeutralForeground2Hover;
+      background-color: $colorSubtleBackgroundHover;
+      border-color: transparent;
+
+      &:active {
+        color: $colorNeutralForeground2Pressed;
+        background-color: $colorSubtleBackgroundPressed;
+        border-color: transparent;
+      }
+    }
+  }
+
+  &--transparent {
+    color: $colorNeutralForeground2;
+    background-color: $colorTransparentBackground;
+    border-color: transparent;
+
+    &:hover {
+      color: $colorNeutralForeground2BrandHover;
+      border-color: transparent;
+
+      &:active {
+        color: $colorNeutralForeground2BrandPressed;
+        border-color: transparent;
+      }
+    }
+  }
+
+  &--disabled {
+    &, &:hover, &:hover:active {
+      background-color: $colorNeutralBackgroundDisabled;
+      border-color: $colorNeutralStrokeDisabled;
+      color: $colorNeutralForegroundDisabled;
+      cursor: not-allowed;
+    }
+  }
+
+  &--disabled.fui-button--primary {
+    &, &:hover, &:hover:active {
+      border-color: transparent;
+    }
+  }
+
+  &--small {
+    padding: 3px $spacingHorizontalS;
+    min-width: 64px;
+    font-size: $fontSizeBase200;
+    line-height: $lineHeightBase200;
+    font-weight: $fontWeightRegular;
+  }
+
+  &--large {
+    padding: 8px $spacingHorizontalL;
+    min-width: 96px;
+    font-size: $fontSizeBase400;
+    line-height: $lineHeightBase400;
+    font-weight: $fontWeightSemibold;
+
+    .fui-button__icon {
+      font-size: 24px;
+    }
+  }
+}

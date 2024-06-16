@@ -1,0 +1,10 @@
+.innerWrapper {
+  column-gap: 15px;
+  display: flex;
+}
+
+.outerWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
